@@ -1,0 +1,1242 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Attom Data Solutions API",
+        "description": "ATTOM empowers customers with better property data. We warehouse property data nationwide with myriad data points on each parcel including ownership information, lat\/long, square footage, loan types, sales history, sales comps, crime, schools and more.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpssearch.onboard-apis.com\/communityapi\/v2.0.0"
+    ],
+    "paths": {
+        "\/property\/id": {
+            "get": {
+                "summary": "Returns a list of properties that fit a criteria.",
+                "description": "Get a list of property IDs within a specific geography that have a specific number of beds. Use orderby to choose how you want your results sorted.",
+                "operationId": "GetPropertyIdList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "geoid",
+                        "in": "query",
+                        "description": "A list of geographies that this property belongs to. These geoIDs are used by search engine and values should not be exposed to the public."
+                    },
+                    {
+                        "name": "minBeds",
+                        "in": "query",
+                        "description": "The min Bed size to search from."
+                    },
+                    {
+                        "name": "maxBeds",
+                        "in": "query",
+                        "description": "The max Bed size to search from."
+                    },
+                    {
+                        "name": "orderby",
+                        "in": "query",
+                        "description": "Sort Options"
+                    }
+                ]
+            }
+        },
+        "\/property\/detail": {
+            "get": {
+                "summary": "Returns property details based on an ID.",
+                "description": "Get property details based on its Onboard property ID.",
+                "operationId": "PropertyDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    },
+                    {
+                        "name": "address",
+                        "in": "query",
+                        "description": "The mailing address"
+                    }
+                ]
+            }
+        },
+        "\/property\/address": {
+            "get": {
+                "summary": "Returns properties within a zip code.",
+                "description": "Get a list of properties within a zip code. Use propertytype and order by to narrow down your results.",
+                "operationId": "AdressList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "postalcode",
+                        "in": "query",
+                        "description": "The zip code or postal code to search"
+                    },
+                    {
+                        "name": "propertytype",
+                        "in": "query",
+                        "description": "A specific property classification such as 'Detached Single Family'"
+                    },
+                    {
+                        "name": "orderby",
+                        "in": "query",
+                        "description": "Sort Options"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The current view index based on the pagesize and the total number of records available"
+                    },
+                    {
+                        "name": "pagesize",
+                        "in": "query",
+                        "description": "The number of records to be returned with the request"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/property\/snapshot": {
+            "get": {
+                "summary": "Returns properties and their characteristics that fit a criteria.",
+                "description": "Get a list of property snapshots within a specific city that are within a desired size range and a specific property type.",
+                "operationId": "PropertySnapshot",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "cityname",
+                        "in": "query",
+                        "description": "The name of the city to search from"
+                    },
+                    {
+                        "name": "minLotSize1",
+                        "in": "query",
+                        "description": "The min Lot size 1 to search from"
+                    },
+                    {
+                        "name": "maxLotSize1",
+                        "in": "query",
+                        "description": "The max Lot size 1 to search from"
+                    },
+                    {
+                        "name": "propertytype",
+                        "in": "query",
+                        "description": "A specific property classification such as 'Detached Single Family'"
+                    },
+                    {
+                        "name": "orderby",
+                        "in": "query",
+                        "description": "Sort Options"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "query",
+                        "description": "The property latitude coordinate"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "query",
+                        "description": "The property longitude coordinate"
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "mintaxamt",
+                        "in": "query",
+                        "description": "The total amount of taxes paid to the local taxing authority"
+                    },
+                    {
+                        "name": "maxtaxamt",
+                        "in": "query",
+                        "description": "The total amount of taxes paid to the local taxing authority"
+                    },
+                    {
+                        "name": "postalcode",
+                        "in": "query",
+                        "description": "The zip code or postal code to search"
+                    },
+                    {
+                        "name": "minavmvalue",
+                        "in": "query",
+                        "description": "The minimum AVM Value"
+                    },
+                    {
+                        "name": "maxavmvalue",
+                        "in": "query",
+                        "description": "The maximum AVM Valuey"
+                    }
+                ]
+            }
+        },
+        "\/property\/basicprofile": {
+            "get": {
+                "summary": "Returns basic property information and most recent transaction and taxes.",
+                "description": "Get basic property information and most recent transaction and taxes for a specific attom id.",
+                "operationId": "PropertyBasicProfile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "attomid",
+                        "in": "query",
+                        "description": "attom id"
+                    }
+                ]
+            }
+        },
+        "\/property\/expandedprofile": {
+            "get": {
+                "summary": "Returns detailed property information and most recent transaction and taxes.",
+                "description": "Get a detailed property information and most recent transaction and taxes for a specific address.",
+                "operationId": "PropertyExpandedProfile",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/property\/detailwithschools": {
+            "get": {
+                "summary": "Return schools within the attendance boundary of a property.",
+                "description": "Search for a property to have the property details returned, along with the schools in the associated attendance zones.",
+                "operationId": "PropertyDetailsWithSchools",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    }
+                ]
+            }
+        },
+        "\/school\/snapshot": {
+            "get": {
+                "summary": "Return all schools within a defined radius from a point.",
+                "description": "Search for all schools that are located within a given radius around a given latitude and longitude.",
+                "operationId": "PropertySchoolSnapshot",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "query",
+                        "description": "The property latitude coordinate"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "query",
+                        "description": "The property longitude coordinate"
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filetypetext",
+                        "in": "query",
+                        "description": "The type of school (public, private, or catholic can be selected)"
+                    }
+                ]
+            }
+        },
+        "\/school\/detail": {
+            "get": {
+                "summary": "Return details about a particular school.",
+                "description": "Search by school ID to return all of the available details about a school",
+                "operationId": "PropertyDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    }
+                ]
+            }
+        },
+        "\/school\/districtdetail": {
+            "get": {
+                "summary": "Return details about a particular school district.",
+                "description": "Search by district number to return all of the available details about a school district",
+                "operationId": "PropertySchoolDistrictDetail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    }
+                ]
+            }
+        },
+        "\/allevents\/detail": {
+            "get": {
+                "summary": "Returns all the events that have occurred on a specific address.",
+                "description": "Get a detail of all the events on a specific property based on its address.",
+                "operationId": "GetAllEventsDetailAddress",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/property\/detailmortgage": {
+            "get": {
+                "summary": "Returns property details mortgage based on ID.",
+                "description": "Get property details mortgage based on its Onboard property ID.",
+                "operationId": "PropertyDetailsMortage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/property\/detailowner": {
+            "get": {
+                "summary": "Returns property details owner based on an ID.",
+                "description": "Get property details owner based on its Onboard property ID.",
+                "operationId": "PropertyDetailsOwner",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/property\/detailmortgageowner": {
+            "get": {
+                "summary": "Returns property details mortgageowner based on an ID.",
+                "description": "Get property details mortgageowner based on its Onboard property ID.",
+                "operationId": "PropertyDetailsMortgageOwner",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/assessment\/snapshot": {
+            "get": {
+                "summary": "Returns assessment details for properties within a radius.",
+                "description": "Get snapshots of the properties within a radius of a property that have a total market value within a specified range.",
+                "operationId": "GetAssessmentSnapshotTotal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "minmktttlvalue",
+                        "in": "query",
+                        "description": "The estimated total market value from the local taxing authority"
+                    },
+                    {
+                        "name": "maxmktttlvalue",
+                        "in": "query",
+                        "description": "The estimated total market value from the local taxing authority"
+                    }
+                ]
+            }
+        },
+        "\/assessment\/detail": {
+            "get": {
+                "summary": "Returns assessment details for properties within a zip code.",
+                "description": "Get assessment details for properties within a zip code. Use propertytpe to select a specific property type for your search.",
+                "operationId": "AssessmenDetailPropertyId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "postalcode",
+                        "in": "query",
+                        "description": "The zip code or postal code to search"
+                    },
+                    {
+                        "name": "propertytype",
+                        "in": "query",
+                        "description": "A specific property classification such as 'Detached Single Family'"
+                    }
+                ]
+            }
+        },
+        "\/assessmenthistory\/detail": {
+            "get": {
+                "summary": "Returns assessment history and property details.",
+                "description": "Get a full detail of property characteristics and assessment history information for a specific property.",
+                "operationId": "AssessmentHistoryDetailID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    }
+                ]
+            }
+        },
+        "\/avm\/snapshot": {
+            "get": {
+                "summary": "Returns AVM details within a geography.",
+                "description": "Get a list of AVM snapshot records that fall within an Onboard GeoID with a specific value range. Use propertytpe to select a specific property type for your search.",
+                "operationId": "AvmSnapshotGeoID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "geoid",
+                        "in": "query",
+                        "description": "A list of geographies that this property belongs to. These geoIDs are used by search engine and values should not be exposed to the public."
+                    },
+                    {
+                        "name": "minavmvalue",
+                        "in": "query",
+                        "description": "The minimum AVM Value"
+                    },
+                    {
+                        "name": "maxavmvalue",
+                        "in": "query",
+                        "description": "The maximum AVM Valuey"
+                    },
+                    {
+                        "name": "propertytype",
+                        "in": "query",
+                        "description": "A specific property classification such as 'Detached Single Family'"
+                    }
+                ]
+            }
+        },
+        "\/avm\/detail": {
+            "get": {
+                "summary": "Returns AVM details for a property.",
+                "description": "Get AVM details for a specific address.",
+                "operationId": "AvmDetailPostal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/attomavm\/detail": {
+            "get": {
+                "summary": "Returns the Attomized AVM and other property details .",
+                "description": "Get Attomized AVM and other property details for a specific address.",
+                "operationId": "AttomAvmDetail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "attomid",
+                        "in": "query",
+                        "description": "attom id"
+                    }
+                ]
+            }
+        },
+        "\/sale\/snapshot": {
+            "get": {
+                "summary": "Returns home sale information for properties within a geography.",
+                "description": "Get a list of home sale snapshots within a Onboard GeoID that sold within a date range and specified sale amount.",
+                "operationId": "GetHomeSaleSnapshotsGeoId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "geoid",
+                        "in": "query",
+                        "description": "A list of geographies that this property belongs to. These geoIDs are used by search engine and values should not be exposed to the public."
+                    },
+                    {
+                        "name": "minsaleamt",
+                        "in": "query",
+                        "description": "The recorded amount of the sale transaction"
+                    },
+                    {
+                        "name": "maxsaleamt",
+                        "in": "query",
+                        "description": "The recorded amount of the sale transaction"
+                    },
+                    {
+                        "name": "startsalesearchdate",
+                        "in": "query",
+                        "description": "The standardized date for search purposes"
+                    },
+                    {
+                        "name": "endsalesearchdate",
+                        "in": "query",
+                        "description": "The standardized date for search purposes"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    },
+                    {
+                        "name": "radius",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "propertytype",
+                        "in": "query",
+                        "description": "A specific property classification such as 'Detached Single Family'"
+                    }
+                ]
+            }
+        },
+        "\/sale\/detail": {
+            "get": {
+                "summary": "Returns sale information for a property.",
+                "description": "Get sales information for a specific address.",
+                "operationId": "GetSaleDetailPostal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/saleshistory\/snapshot": {
+            "get": {
+                "summary": "Returns sales history for a property.",
+                "description": "Get a sales history snapshot of a property based on an Onboard property ID.",
+                "operationId": "GetSaleHistorySnapshotPropertyId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "property id"
+                    }
+                ]
+            }
+        },
+        "\/saleshistory\/basichistory": {
+            "get": {
+                "summary": "Returns basic transaction and loan history on a property.",
+                "description": "Get the basic transaction and loan history on a property for a specific address.",
+                "operationId": "SaleHistoryBasicHistory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/saleshistory\/expandedhistory": {
+            "get": {
+                "summary": "Returns detailed transaction, pre-foreclosure and loan history on a property.",
+                "description": "Get the detailed transaction, pre-foreclosure and loan history on a property for a specific address.",
+                "operationId": "SaleHistoryExpandedHistory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/saleshistory\/detail": {
+            "get": {
+                "summary": "Returns sales history for a property.",
+                "description": "Get a sales history snapshot of a property based on an address.",
+                "operationId": "GetSaleHistoryDetailAddress",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "address1",
+                        "in": "query",
+                        "description": "The first line of the mailing address"
+                    },
+                    {
+                        "name": "address2",
+                        "in": "query",
+                        "description": "The second line of the mailing address"
+                    }
+                ]
+            }
+        },
+        "\/salestrend\/snapshot": {
+            "get": {
+                "summary": "Returns sales trends for a given zip code in yearly intervals",
+                "description": "Get the average sale price, median sale price, and count of sales for the past 2 years in yearly intervals.",
+                "operationId": "GetSalesTrendByYear",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "geoid",
+                        "in": "query",
+                        "description": "A list of geographies that this property belongs to. These geoIDs are used by search engine and values should not be exposed to the public."
+                    },
+                    {
+                        "name": "interval",
+                        "in": "query",
+                        "description": "The interval to search from"
+                    },
+                    {
+                        "name": "startyear",
+                        "in": "query",
+                        "description": "The start year to search from"
+                    },
+                    {
+                        "name": "endyear",
+                        "in": "query",
+                        "description": "The end year to search from"
+                    },
+                    {
+                        "name": "startmonth",
+                        "in": "query",
+                        "description": "The start month to search from"
+                    },
+                    {
+                        "name": "endmonth",
+                        "in": "query",
+                        "description": "The end month to search from"
+                    }
+                ]
+            }
+        },
+        "\/hierarchy\/lookup": {
+            "get": {
+                "summary": "Returns all boundaries a point falls within.",
+                "description": "This method allows you to pass a latitude and longitude point and geo type to retrieve a list of geographies that point falls within. Required input is a valid WKT (Well Known Text) point.",
+                "operationId": "GetAreaHierarchyLookup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "WKTString",
+                        "in": "query",
+                        "description": "WKTString parameters"
+                    },
+                    {
+                        "name": "geoType",
+                        "in": "query",
+                        "description": "known Geo Type"
+                    },
+                    {
+                        "name": "latitude",
+                        "in": "query",
+                        "description": "The property latitude coordinate"
+                    },
+                    {
+                        "name": "longitude",
+                        "in": "query",
+                        "description": "The property longitude coordinate"
+                    }
+                ]
+            }
+        },
+        "\/poi\/geography": {
+            "get": {
+                "summary": "Returns POIs based on zip code.",
+                "description": "This search returns a list of Points of Interest in proximity to the centroid of a zip code.",
+                "operationId": "GetPOISearchGeography",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "PostalCodeKey",
+                        "in": "query",
+                        "description": "This is the Postal Code"
+                    },
+                    {
+                        "name": "SearchDistance",
+                        "in": "query",
+                        "description": "This is SearchDistance"
+                    },
+                    {
+                        "name": "RecordLimit",
+                        "in": "query",
+                        "description": "This is RecordLimit"
+                    },
+                    {
+                        "name": "Sort",
+                        "in": "query",
+                        "description": "This is for Sortable Columns"
+                    }
+                ]
+            }
+        },
+        "\/poi\/point": {
+            "get": {
+                "summary": "Returns POIs based on point.",
+                "description": "This search returns a list of POI in proximity to a latitude\/longitude.",
+                "operationId": "GetPOISearchPoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "Point",
+                        "in": "query",
+                        "description": "This is the Point value"
+                    },
+                    {
+                        "name": "SearchDistance",
+                        "in": "query",
+                        "description": "This is SearchDistance"
+                    },
+                    {
+                        "name": "RecordLimit",
+                        "in": "query",
+                        "description": "This is RecordLimit"
+                    },
+                    {
+                        "name": "BusinessCategory",
+                        "in": "query",
+                        "description": "This is Business Category as per Lookup separated by pipe '|'"
+                    },
+                    {
+                        "name": "Sort",
+                        "in": "query",
+                        "description": "This is for Sortable Columns"
+                    }
+                ]
+            }
+        },
+        "\/poi\/street+address": {
+            "get": {
+                "summary": "Returns POIs based on an address.",
+                "description": "This search returns a list of POI in proximity to an address.",
+                "operationId": "GetPOISearchPoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "StreetAddress",
+                        "in": "query",
+                        "description": "This is the Point value"
+                    },
+                    {
+                        "name": "SearchDistance",
+                        "in": "query",
+                        "description": "This is SearchDistance"
+                    },
+                    {
+                        "name": "RecordLimit",
+                        "in": "query",
+                        "description": "This is RecordLimit"
+                    },
+                    {
+                        "name": "Sort",
+                        "in": "query",
+                        "description": "This is for Sortable Columns"
+                    }
+                ]
+            }
+        },
+        "\/business+category\/lookup": {
+            "get": {
+                "summary": "Returns business categories.",
+                "description": "This lookup is used to obtain a full list of Business Categories.",
+                "operationId": "GetPOIBusinessCategoryLookup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    }
+                ]
+            }
+        },
+        "\/lob\/lookup": {
+            "get": {
+                "summary": "Returns lines of business categories.",
+                "description": "This lookup can be used to show the full list of Lines of Businesses (LOB), and which categories they belong to.",
+                "operationId": "GetPOIlob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    }
+                ]
+            }
+        },
+        "\/area\/full": {
+            "get": {
+                "summary": "Returns community information.",
+                "description": "This search returns community information for a specific geography.",
+                "operationId": "GetCommunityAPIAreaFull",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    },
+                    {
+                        "name": "AreaId",
+                        "in": "query",
+                        "description": "This is the Area ID to search"
+                    }
+                ]
+            }
+        },
+        "\/attribute\/lookup": {
+            "get": {
+                "summary": "Returns available data fields.",
+                "description": "This lookup returns the full list of over 375 data fields that are available in the Community API.",
+                "operationId": "GetCommunityAPIAttributeLookup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "header",
+                        "description": "Application Key"
+                    },
+                    {
+                        "name": "accept",
+                        "in": "header",
+                        "description": "application\/xml or application\/json (default)"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
