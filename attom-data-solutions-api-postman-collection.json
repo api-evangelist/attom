@@ -1,5 +1,5 @@
 {
-    "id": "a86dedc646bcb589da3a3855d3bb1e66",
+    "id": "22f8754f0ac8cc01862516041051a23a",
     "name": "Attom Data Solutions API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "eb7abc8a86eff7c107602c044405598f",
+            "id": "ff36318e756ff15a2598d3f389c07914",
             "name": "Returns a list of properties that fit a criteria.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/id",
             "description": "Get a list of property IDs within a specific geography that have a specific number of beds. Use orderby to choose how you want your results sorted.",
@@ -72,11 +72,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "7363c69af1944ec9e087f801807641c8",
+            "id": "4f97a29ade9f42a72acff0bd4dcd9337",
             "name": "Returns property details based on an ID.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/detail",
             "description": "Get property details based on its Onboard property ID.",
@@ -124,11 +124,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "9c7edc7d88ecd07f07f5e28a57af7a85",
+            "id": "8f6e49623a8f9b4497d40fde67ba5104",
             "name": "Returns properties within a zip code.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/address",
             "description": "Get a list of properties within a zip code. Use propertytype and order by to narrow down your results.",
@@ -218,11 +218,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "25b59b53982d6c7d47739760daf0f8ae",
+            "id": "0d388c1259f9586319b18ced6d9e17a3",
             "name": "Returns properties and their characteristics that fit a criteria.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/snapshot",
             "description": "Get a list of property snapshots within a specific city that are within a desired size range and a specific property type.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "689ec8d9b35c0fe5831495668afbd386",
+            "id": "4e03c8dec0608f9070bd0e231ba09c6d",
             "name": "Returns basic property information and most recent transaction and taxes.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/basicprofile",
             "description": "Get basic property information and most recent transaction and taxes for a specific attom id.",
@@ -392,11 +392,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "ed63b736826b4eba418cb0c7691de316",
+            "id": "e21eaf5c3ff6f7c3d15c4590e9389597",
             "name": "Returns detailed property information and most recent transaction and taxes.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/expandedprofile",
             "description": "Get a detailed property information and most recent transaction and taxes for a specific address.",
@@ -444,11 +444,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "6b58d89504d8e719107a8bef0ba657ae",
+            "id": "3725add7479b76a1ac9b035993046c4a",
             "name": "Return schools within the attendance boundary of a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/detailwithschools",
             "description": "Search for a property to have the property details returned, along with the schools in the associated attendance zones.",
@@ -489,11 +489,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "06a3d35af9ba0ef5232b9a9b1e6337ce",
+            "id": "d1832bb943b7021f31bf07c6f29cb29a",
             "name": "Return all schools within a defined radius from a point.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/school\/snapshot",
             "description": "Search for all schools that are located within a given radius around a given latitude and longitude.",
@@ -555,11 +555,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "7de7e68e70fa33137f2cd2681ffeb805",
+            "id": "c79aaa336f430f9a3cc94c28fcd8021a",
             "name": "Return details about a particular school.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/school\/detail",
             "description": "Search by school ID to return all of the available details about a school",
@@ -600,11 +600,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "ec43ac1fd9937ec59bb07c7bb3fde6d1",
+            "id": "429d08744f2bd7fb496c634a650a2292",
             "name": "Return details about a particular school district.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/school\/districtdetail",
             "description": "Search by district number to return all of the available details about a school district",
@@ -645,11 +645,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "54b74eed5ad5dd8a92425fb9e509f971",
+            "id": "8950f5cc651416edf5b7ad6c40e10491",
             "name": "Returns all the events that have occurred on a specific address.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/allevents\/detail",
             "description": "Get a detail of all the events on a specific property based on its address.",
@@ -697,11 +697,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "0daadf066f0bd915e01bfae6c164e171",
+            "id": "b0f56d31ff2916b59087e0a2b0e16e22",
             "name": "Returns property details mortgage based on ID.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/detailmortgage",
             "description": "Get property details mortgage based on its Onboard property ID.",
@@ -756,11 +756,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "dfd8c4cff9bb2868a24c94201e442cf0",
+            "id": "11a700d39b96dca862bdfcca982d430f",
             "name": "Returns property details owner based on an ID.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/detailowner",
             "description": "Get property details owner based on its Onboard property ID.",
@@ -815,11 +815,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "484a8df5b78219f77cb6949b46e2a353",
+            "id": "ad73759621ac8ec7433dbe453dfbac14",
             "name": "Returns property details mortgageowner based on an ID.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/property\/detailmortgageowner",
             "description": "Get property details mortgageowner based on its Onboard property ID.",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "bc6c56e509f00e106314ee61432e0df5",
+            "id": "aa53b5436d219953374e49d5a618af65",
             "name": "Returns assessment details for properties within a radius.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/assessment\/snapshot",
             "description": "Get snapshots of the properties within a radius of a property that have a total market value within a specified range.",
@@ -947,11 +947,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "b8f812268515212328407aadef43088a",
+            "id": "4a578c09106b60853777dae19f53c07d",
             "name": "Returns assessment details for properties within a zip code.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/assessment\/detail",
             "description": "Get assessment details for properties within a zip code. Use propertytpe to select a specific property type for your search.",
@@ -999,11 +999,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "a7f9a5bc84b3e9e303396aa752cb3593",
+            "id": "8d69cbe3b2ec28f961035ac28130a4ad",
             "name": "Returns assessment history and property details.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/assessmenthistory\/detail",
             "description": "Get a full detail of property characteristics and assessment history information for a specific property.",
@@ -1044,11 +1044,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "f38fa03ab7aee23d18407f19b329872d",
+            "id": "ba1ad76bbbff2ec94ba182083dcf0815",
             "name": "Returns AVM details within a geography.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/avm\/snapshot",
             "description": "Get a list of AVM snapshot records that fall within an Onboard GeoID with a specific value range. Use propertytpe to select a specific property type for your search.",
@@ -1110,11 +1110,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "ba2b306cd89bd997e0dee30d17508d49",
+            "id": "19b96dd10f1bbe763e11143265e79e02",
             "name": "Returns AVM details for a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/avm\/detail",
             "description": "Get AVM details for a specific address.",
@@ -1162,11 +1162,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "1b2849bcc05261fc818914a92f52009e",
+            "id": "dd8b2a02d16f21037aad36ed898ea0a6",
             "name": "Returns the Attomized AVM and other property details .",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/attomavm\/detail",
             "description": "Get Attomized AVM and other property details for a specific address.",
@@ -1207,11 +1207,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "7b56d24f99aec153bd49a673780fff49",
+            "id": "941f6d564851243ede919cad52d1efcb",
             "name": "Returns home sale information for properties within a geography.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/sale\/snapshot",
             "description": "Get a list of home sale snapshots within a Onboard GeoID that sold within a date range and specified sale amount.",
@@ -1308,11 +1308,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "e49aba8a46fc6a1d58d5f3de94cefdfa",
+            "id": "d220358d5a782a8af4695ad238ab9a4b",
             "name": "Returns sale information for a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/sale\/detail",
             "description": "Get sales information for a specific address.",
@@ -1360,11 +1360,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "50a05721f9c8497f2223773460d1b009",
+            "id": "7be7de7087c36dc71e218fc964018a6f",
             "name": "Returns sales history for a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/saleshistory\/snapshot",
             "description": "Get a sales history snapshot of a property based on an Onboard property ID.",
@@ -1405,11 +1405,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "c76f969825452deeee8c57cc2fcedb3e",
+            "id": "54119ca3cff0b2fa71e35003ad11a6dd",
             "name": "Returns basic transaction and loan history on a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/saleshistory\/basichistory",
             "description": "Get the basic transaction and loan history on a property for a specific address.",
@@ -1457,11 +1457,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "71569889ef4f458d2cdefa8e4e89f75a",
+            "id": "0ebf8b2e067a1ec3a6bda050ff848e32",
             "name": "Returns detailed transaction, pre-foreclosure and loan history on a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/saleshistory\/expandedhistory",
             "description": "Get the detailed transaction, pre-foreclosure and loan history on a property for a specific address.",
@@ -1509,11 +1509,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "fad3f1dd19941b00dc19586280262bfb",
+            "id": "82d9e55b21d7bf150ec8bb960cdd95ed",
             "name": "Returns sales history for a property.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/saleshistory\/detail",
             "description": "Get a sales history snapshot of a property based on an address.",
@@ -1561,11 +1561,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "d63fc58d1e6c496e43d7cb0de5a2e805",
+            "id": "5b80c9de6ca8f1e7162491c98474d7cc",
             "name": "Returns sales trends for a given zip code in yearly intervals",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/salestrend\/snapshot",
             "description": "Get the average sale price, median sale price, and count of sales for the past 2 years in yearly intervals.",
@@ -1641,11 +1641,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "ea27a2f8e9aee6d5229f7804a66f0cf5",
+            "id": "c78050155b226673afd57d2f52df6ebd",
             "name": "Returns all boundaries a point falls within.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/hierarchy\/lookup",
             "description": "This method allows you to pass a latitude and longitude point and geo type to retrieve a list of geographies that point falls within. Required input is a valid WKT (Well Known Text) point.",
@@ -1707,11 +1707,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "cfb184e9474aad9758fad72ad4ce3402",
+            "id": "da1146d2b06fa2513f81d4e5a0d7b113",
             "name": "Returns POIs based on zip code.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/poi\/geography",
             "description": "This search returns a list of Points of Interest in proximity to the centroid of a zip code.",
@@ -1773,11 +1773,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "9875163e41160e91b7d48f601fcb8de5",
+            "id": "81d4385a704c77b4f33a1ef2a30934ff",
             "name": "Returns POIs based on point.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/poi\/point",
             "description": "This search returns a list of POI in proximity to a latitude\/longitude.",
@@ -1846,11 +1846,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "dcbba7ffc95f68802f1d54469d228840",
+            "id": "501781e447ddf239444d49041ae214ab",
             "name": "Returns POIs based on an address.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/poi\/street+address",
             "description": "This search returns a list of POI in proximity to an address.",
@@ -1912,11 +1912,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "60e0c2e2f1cba73e95b5c8aeb6d0b50f",
+            "id": "0641a4444e79bd5988a45311cc001886",
             "name": "Returns business categories.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/business+category\/lookup",
             "description": "This lookup is used to obtain a full list of Business Categories.",
@@ -1950,11 +1950,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "649eb502636280568e828243a9bee1a2",
+            "id": "611449973120e727e966f169c711cc47",
             "name": "Returns lines of business categories.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/lob\/lookup",
             "description": "This lookup can be used to show the full list of Lines of Businesses (LOB), and which categories they belong to.",
@@ -1988,11 +1988,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "81f2f37e7f41dfb6b44292a56e6cfa48",
+            "id": "ab9beb31eb8eabd6698d94be5b4eff47",
             "name": "Returns community information.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/area\/full",
             "description": "This search returns community information for a specific geography.",
@@ -2033,11 +2033,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         },
         {
-            "id": "b4340e6178142424cf877906c522fed7",
+            "id": "747ac9de1c394b6b2640f4ce9e8a7d87",
             "name": "Returns available data fields.",
             "url": "httpssearch.onboard-apis.com\/communityapi\/v2.0.0\/attribute\/lookup",
             "description": "This lookup returns the full list of over 375 data fields that are available in the Community API.",
@@ -2071,7 +2071,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a86dedc646bcb589da3a3855d3bb1e66",
+            "collectionId": "22f8754f0ac8cc01862516041051a23a",
             "rawModeData": ""
         }
     ]
